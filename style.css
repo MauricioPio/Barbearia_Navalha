@@ -3,7 +3,8 @@ body {
 }
 
 header {
-	background: #BBBBBB;
+	background-color: #888888;
+	/* background-image: image-set('Wood-Grain-HD-Backgrounds-22694256011.jpg'); */
 	padding: 20px 0;
 }
 
@@ -11,6 +12,10 @@ header {
 	position: relative;
 	width: 940px;
 	margin: 0 auto;
+}
+
+.caixa img {
+	height: 100px;
 }
 
 nav {
