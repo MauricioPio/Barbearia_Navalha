@@ -3,43 +3,54 @@ body {
 }
 
 header {
-	background-color: #888888;
-	/* background-image: image-set('Wood-Grain-HD-Backgrounds-22694256011.jpg'); */
 	padding: 20px 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
 .caixa {
 	position: relative;
-	width: 940px;
+	display: flex;
+	align-items: start;
+	width: 1800px;
 	margin: 0 auto;
+	padding-top: 15px;
 }
 
+
 .caixa img {
-	height: 100px;
+	height: 80px;
 }
 
 nav {
 	position: absolute;
-	top: 110px;
 	right: 0;
 }
 
 nav li {
 	display: inline;
-	margin: 0 0 0 15px;
+	margin: 0 0 0 40px;
 }
 
 nav a {
 	text-transform: uppercase;
-	color: #000000;
+	color: #FFFFFF;
 	font-weight: bold;
-	font-size: 22px;
+	font-size: 18px;
 	text-decoration: none;
 }
 
 nav a:hover {
 	color: #115BBF;
 	text-decoration: underline;
+}
+
+.banner {
+	height: 100vh;
+	/* width: 1920px; */
 }
 
 .produtos {
@@ -279,12 +290,9 @@ th {
 	}
 
 	.lista-beneficios,
-	.imagem-beneficios {}
-
-	.produtos,
+	.imagem-beneficios .produtos,
 	.produtos li {
 		position: static;
 		width: auto;
 	}
-
 }
