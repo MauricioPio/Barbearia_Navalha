@@ -3,26 +3,24 @@ body {
 }
 
 header {
-	padding: 20px 0;
+	padding: 30px 0;
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
-	/* height: 100%; */
 }
 
-.caixa {
+.container-nav {
 	position: relative;
 	display: flex;
-	align-items: start;
+	/* align-items: center; */
 	width: 1800px;
 	margin: 0 auto;
-	padding-top: 15px;
+
 }
 
-
-.caixa img {
-	height: 80px;
+.logo {
+	height: 70px;
 }
 
 nav {
@@ -39,7 +37,7 @@ nav a {
 	text-transform: uppercase;
 	color: #FFFFFF;
 	font-weight: bold;
-	font-size: 18px;
+	font-size: 14px;
 	text-decoration: none;
 }
 
@@ -48,10 +46,25 @@ nav a:hover {
 	text-decoration: underline;
 }
 
-.teste {
-	position: relative;
-	font-size: 100px;
+.textohome {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0 55px;
+}
 
+.textohome h1 {
+	font-size: 80px;
+    color: white;
+    padding: 30px 0
+}
+
+.textohome p {
+	color: white;
+    font-size: 18px;
+    text-align: justify;
 }
 
 .banner {
