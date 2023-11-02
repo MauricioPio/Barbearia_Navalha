@@ -13,14 +13,13 @@ header {
 .container-nav {
 	position: relative;
 	display: flex;
-	/* align-items: center; */
-	width: 1800px;
+	align-items: center;
+	width: 1770px;
 	margin: 0 auto;
-
 }
 
 .logo {
-	height: 70px;
+	height: 80px;
 }
 
 nav {
@@ -42,32 +41,63 @@ nav a {
 }
 
 nav a:hover {
-	color: #115BBF;
-	text-decoration: underline;
+	color: #eb0a12;
+}
+
+.container-home {
+	position: absolute;
+	margin: 0 70px;
 }
 
 .textohome {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 100vh;
-    margin: 0 55px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	height: 70vh;
+	padding-top: 70px;
 }
 
 .textohome h1 {
-	font-size: 80px;
-    color: white;
-    padding: 30px 0
+	font-size: 95px;
+	color: white;
+	padding: 55px 0;
+	/* font-style: italic; */
+	font-family: 'Merriweather', serif;
 }
 
 .textohome p {
 	color: white;
-    font-size: 18px;
-    text-align: justify;
+	font-size: 18px;
+	text-align: justify;
 }
 
-.banner {
+
+.btn-home {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	background-color: #eb0a12;
+	font-weight: bolder;
+	height: 50px;
+	width: 300px;
+	border-radius: 10px;
+	margin: auto;
+	margin-top: 20px;
+	text-decoration: none;
+}
+
+.btn-home:hover {
+  animation: pulse .4s;
+  box-shadow: 0 0 0 1em transparent;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 #eb0a12}
+}
+
+.fundo {
 	width: 100vw;
 }
 
