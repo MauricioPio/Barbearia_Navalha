@@ -39,7 +39,6 @@ nav a {
 	font-size: 14px;
 	text-decoration: none;
 	transition: 300ms;
-
 }
 
 nav a:hover {
@@ -98,6 +97,32 @@ nav a:hover {
 @keyframes pulse {
 	0% {
 		box-shadow: 0 0 0 0 #eb0a12
+	}
+}
+
+.saiba-mais {
+	padding-bottom: 5px;
+	position: absolute;
+	bottom: 0;
+	right: 50vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: white;
+}
+
+.seta-baixo {
+	height: 8px;
+	opacity: 0;
+	padding-bottom: 10px;
+	animation: seta .8s ease-in-out infinite;
+}
+
+@keyframes seta {
+	to {
+		padding-bottom: 0px;
+		opacity: 1;
 	}
 }
 
@@ -284,7 +309,7 @@ th {
 }
 
 .conteudo-beneficios {
-	display:flex;
+	display: flex;
 	justify-content: space-around;
 	width: 940px;
 	margin: 0 auto;
