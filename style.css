@@ -3,29 +3,28 @@ body {
 }
 
 header {
-	padding: 30px 0;
-	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
+	width: 100vw;
 }
 
 .container-nav {
-	position: relative;
+	position: absolute;
+	padding: 30px 70px;
 	display: flex;
 	align-items: center;
-	width: 1770px;
-	margin: 0 auto;
+	justify-content: space-between;
+	width: calc(100vw - 140px);
+}
+
+.nav-fundo-preto {
+	background-color: #000000;
 }
 
 .logo {
 	height: 80px;
 }
 
-nav {
-	position: absolute;
-	right: 0;
-}
 
 nav li {
 	display: inline;
@@ -46,23 +45,26 @@ nav a:hover {
 }
 
 .container-home {
-	position: absolute;
-	margin: 0 70px;
+	height:100vh;
+	width: 100vw;
+	background-image: url('fundo.jpg'); 
+	background-repeat: no-repeat;
+    background-size: contain;
+
 }
 
 .textohome {
 	display: flex;
-	justify-content: center;
 	flex-direction: column;
-	height: 70vh;
-	padding-top: 70px;
+	width: 50vw;
+	padding-top: 200px;
+	padding-left: 70px;
 }
 
 .textohome h1 {
-	font-size: 95px;
+	font-size: 6rem;
 	color: white;
 	padding: 55px 0;
-	/* font-style: italic; */
 	font-family: 'Merriweather', serif;
 }
 
@@ -70,11 +72,10 @@ nav a:hover {
 	color: white;
 	font-size: 18px;
 	text-align: justify;
+	padding-bottom: 80px
 }
 
-
 .btn-home {
-	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -84,9 +85,9 @@ nav a:hover {
 	height: 50px;
 	width: 300px;
 	border-radius: 10px;
-	margin: auto;
-	margin-top: 20px;
+	margin: 0 auto;
 	text-decoration: none;
+	transform: translateX(-45px);
 }
 
 .btn-home:hover {
@@ -130,51 +131,88 @@ nav a:hover {
 	width: 100vw;
 }
 
-.produtos {
-	width: 940px;
-	margin: 0 auto;
-	padding: 50px 0;
+.caixa {
+	background-color: #555555;
 }
 
-.produtos li {
+.caixa img {
+	height: 80px;
+}
+
+.main-servicos{
+	display: flex;
+	justify-content: center;
+}
+
+.container-servicos {
+	display: flex;
+	justify-content: center;
+	height: calc(100vh - 63px);
+	width: 100vw;
+	background-image: url('fundo_pb.jpg.'); 
+	background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.servicos {	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.servicos li {
 	display: inline-block;
 	text-align: center;
-	width: 30%;
+	height: 450px;
+	width: 350px;
 	vertical-align: top;
 	margin: 0 1.5%;
 	padding: 30px 20px;
 	box-sizing: border-box;
-	border: 2px solid #000000;
+	background-color: #fff9e9;
 	border-radius: 10px;
+	
 }
 
-.produtos li:hover {
+.servicos li:nth-child(2) {
+	height: 550px;
+	width: 450px;
+}
+
+.servicos li:hover {
 	border-color: #115BBF;
 }
 
-.produtos li:active {
+.servicos li:active {
 	border-color: #4fc3f7;
 }
 
-.produtos li:hover h2 {
+.servicos li:hover h2 {
 	font-size: 34px;
 }
 
-.produtos h2 {
+.servicos h2 {
 	font-size: 30px;
 	font-weight: bold;
 }
 
-.produto-descricao {
+.servico-descricao {
 	font-size: 18px;
 }
 
-.produto-preco {
+.servico-preco {
 	font-size: 22px;
 	font-weight: bold;
 	margin-top: 10px;
 }
 
+.borda {
+	position: absolute;
+	height: 390px;
+	width: 288px;
+	border: 1px solid red;
+}
 footer {
 	display: flex;
 	align-items: center;
@@ -269,7 +307,6 @@ th {
 	margin: 0 auto;
 }
 
-
 .principal p {
 	margin: 0 0 1em;
 }
@@ -337,39 +374,17 @@ th {
 	transition: 400ms;
 }
 
-.imagem-beneficios:hover {
-	opacity: 0.3;
-}
-
 .video {
 	width: 800px;
 	margin: 2em auto;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1200px) {
 
-	.caixa,
-	.principal,
-	.conteudo-beneficios,
-	.mapa-conteudo,
-	.video {
-		width: auto;
+	.container-nav {
+		background-image: url('responsivo.jpg');
+		height: 100vh;
+		background-repeat: no-repeat;
 	}
 
-
-	h1 {
-		text-align: center;
-
-	}
-
-	nav {
-		position: static;
-	}
-
-	.lista-beneficios,
-	.imagem-beneficios .produtos,
-	.produtos li {
-		position: static;
-		width: auto;
-	}
 }
