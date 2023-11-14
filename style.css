@@ -337,17 +337,6 @@ form legend {
 }
 
 .enviar {
-	/* width: 40%;
-	padding: 15px 0;
-	background: #115BBF;
-	color: white;
-	font-weight: bold;
-	font-size: 18px;
-	border: none;
-	border-radius: 5px;
-	transition: .2s all;
-	cursor: pointer; */
-
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -418,8 +407,10 @@ input[type="checkbox"]:checked {
 @media screen and (max-width: 1200px) {
 
 	.container-nav {
+		display: flex;
 		background-image: url('responsivo.jpg');
 		height: 100vh;
+		width: 100vw;
 		background-repeat: no-repeat;
 	}
 
